@@ -1,1 +1,12 @@
+.cards-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+.col {
+  padding: 20px;
+}
+
+.card img {
+  padding: 20px;
+}
