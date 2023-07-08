@@ -10,6 +10,7 @@ import { AppleComponent } from './components/apple/apple.component';
 import { HowToUseComponent } from './components/how-to-use/how-to-use.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { WhatIsAChipsComponent } from './components/what-is-achips/what-is-achips.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'android', component: AndroidComponent },
   { path: 'apple', component: AppleComponent },
   { path: 'what-is-a-chip', component: WhatIsAChipsComponent },
+  { path: 'about-us', component: AboutUsComponent },
 ];
 
 @NgModule({
@@ -28,6 +30,7 @@ const appRoutes: Routes = [
     AppleComponent,
     HowToUseComponent,
     WhatIsAChipsComponent,
+    AboutUsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
