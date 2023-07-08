@@ -1,12 +1,96 @@
-.cards-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .col {
   padding: 20px;
 }
 
 .card img {
   padding: 20px;
+}
+
+/* Estilos card about us */
+.content-about {
+  padding: 0px 10px 50px 200px;
+}
+
+.card-about-us {
+  display: flex;
+  align-items: center;
+  width: 95vw;
+  max-width: 950px;
+  padding: 50px 30px 50px 0px;
+  background: #000000;
+  border-radius: 30px;
+}
+
+.card-about-us img {
+  max-width: 680px;
+  width: 50vw;
+  height: 500px;
+  object-fit: cover;
+  margin-left: -60px;
+  margin-right: 30px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0, 0, 0 / 8%);
+}
+
+.card-about-us h4 {
+  color: white;
+}
+
+.card-about-us h6 {
+  color: white;
+  padding: 10px;
+}
+
+.card-about-us button {
+  border: 0;
+  background: rgb(0, 132, 255);
+  color: white;
+  font-family: inherit;
+  padding: 16px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+/* Tablet */
+@media (width <= 1150px) {
+  .content-about {
+    padding: 0px 100px 0px 0px;
+  }
+
+  .card-about-us {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+  }
+  .card-about-us img {
+    margin: -100px 0 30px 0;
+    height: 400px;
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+
+/* Phones */
+@media (width <= 740px) {
+  .content-about {
+    padding: 0px 70px 0px 0px;
+  }
+
+  .card-about-us {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+  }
+  .card-about-us img {
+    margin: -100px 0 30px 0;
+    height: 400px;
+    width: 100%;
+    max-width: 1000px;
+  }
 }
