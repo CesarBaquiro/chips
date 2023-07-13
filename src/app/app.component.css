@@ -2,3 +2,22 @@
   /*Modifica lo que quieras*/
   background: rgb(51, 51, 51);
 }
+
+.navbar-toggler-icon {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.logotipo {
+  margin: 10px;
+}
+
+i.bi.bi-cart {
+  color: white;
+  font-size: 30px;
+
+  position: absolute;
+  bottom: 10;
+  right: 0;
+  margin-right: 5vw;
+}
