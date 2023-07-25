@@ -16,7 +16,11 @@ export class TotalComponent {
     this.cartService.products
       .pipe(
         map((products) => {
-          return products.reduce((prev, curr) => prev + curr.precio, 0);
+          let total = products.reduce(
+            (prev, curr) => prev + curr.precio * curr.cantidad,
+            0
+          );
+          return total;
         })
       )
       .subscribe((val) => {

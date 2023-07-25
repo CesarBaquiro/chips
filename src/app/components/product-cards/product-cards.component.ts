@@ -15,8 +15,7 @@ export class ProductCardsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private cartService: CartService) {
     this.productsData = products;
-    console.log('Lista de todos los productos');
-    console.log(this.productsData);
+    // console.log('Lista de todos los productos', this.productsData);
   }
 
   ngOnInit(): void {}

@@ -8,6 +8,7 @@ export const products: Products[] = [
     precio: 35000,
     coleccion: 'Black',
     imagen: './assets/collection-black/chips.jpg',
+    cantidad: 1,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const products: Products[] = [
     precio: 35000,
     coleccion: 'Black',
     imagen: './assets/collection-black/c-de-chips.jpg',
+    cantidad: 1,
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ export const products: Products[] = [
     precio: 40000,
     coleccion: 'Black',
     imagen: './assets/collection-black/off-white.jpg',
+    cantidad: 1,
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ export const products: Products[] = [
     precio: 40000,
     coleccion: 'Black',
     imagen: './assets/collection-black/patita.jpg',
+    cantidad: 1,
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ export const products: Products[] = [
     precio: 40000,
     coleccion: 'Black',
     imagen: './assets/collection-black/sonrisa.jpg',
+    cantidad: 1,
   },
   {
     id: 6,
@@ -48,6 +53,7 @@ export const products: Products[] = [
     precio: 40000,
     coleccion: 'Black',
     imagen: './assets/collection-black/fueguito.jpg',
+    cantidad: 1,
   },
   {
     id: 7,
@@ -56,6 +62,7 @@ export const products: Products[] = [
     precio: 40000,
     coleccion: 'Black',
     imagen: './assets/collection-black/estrella.jpg',
+    cantidad: 1,
   },
   {
     id: 8,
@@ -64,5 +71,6 @@ export const products: Products[] = [
     precio: 40000,
     coleccion: 'Black',
     imagen: './assets/collection-black/corazon.jpg',
+    cantidad: 1,
   },
 ];

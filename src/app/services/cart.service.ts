@@ -19,7 +19,15 @@ export class CartService {
   }
 
   addNewProduct(product: Products) {
-    this.cartProducts.push(product);
+    let productoExistente = this.cartProducts.find(
+      (objeto) => objeto === product
+    );
+    if (productoExistente) {
+      productoExistente.cantidad++;
+    } else {
+      product.cantidad = 1;
+      this.cartProducts.push(product);
+    }
     this._products.next(this.cartProducts);
   }
 
@@ -27,4 +35,6 @@ export class CartService {
     this.cartProducts.splice(index, 1);
     this._products.next(this.cartProducts);
   }
+
+  // -------------------------------
 }
