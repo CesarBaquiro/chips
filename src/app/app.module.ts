@@ -15,6 +15,9 @@ import { ProductCardsComponent } from './components/product-cards/product-cards.
 import { ProductsComponent } from './components/products/products.component';
 import { Products } from './models/Products';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartComponent } from './components/cart/cart.component';
+import { OffcanvasCartComponent } from './components/offcanvas-cart/offcanvas-cart.component';
+import { TotalComponent } from './total/total.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -46,6 +49,9 @@ const appRoutes: Routes = [
     ProductCardsComponent,
     ProductsComponent,
     ProductDetailsComponent,
+    CartComponent,
+    OffcanvasCartComponent,
+    TotalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],

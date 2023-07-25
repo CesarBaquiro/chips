@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { products } from 'src/app/data/data';
 import { Products } from 'src/app/models/Products';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product-cards',
@@ -10,11 +11,12 @@ import { Products } from 'src/app/models/Products';
   styleUrls: ['./product-cards.component.css'],
 })
 export class ProductCardsComponent implements OnInit {
-  list: Products[] = products;
+  productsData: Products[] = products;
 
-  constructor(private route: ActivatedRoute) {
-    this.list = products;
-    console.log(this.list);
+  constructor(private route: ActivatedRoute, private cartService: CartService) {
+    this.productsData = products;
+    console.log('Lista de todos los productos');
+    console.log(this.productsData);
   }
 
   ngOnInit(): void {}
@@ -38,5 +40,9 @@ export class ProductCardsComponent implements OnInit {
     }
 
     return array;
+  }
+
+  onClick(product: Products) {
+    this.cartService.addNewProduct(product);
   }
 }

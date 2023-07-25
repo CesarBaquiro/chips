@@ -5,17 +5,18 @@
 <div class="cards-container pt-5 pb-5">
   <!-- Muestra 4 productos al alzar en el home -->
   <div *ngIf="isRoute('')" class="row row-cols-2 row-cols-md-4 g-4 col-sm-9 mx-auto ">
-    <div *ngFor="let p of shuffle(list).slice(0, 4); let i=index" class="col">
+    <div *ngFor="let product of shuffle(productsData).slice(0, 4); let i=index" class="col">
       <div class="card border-black border-2">
-        <img src="{{p.imagen}}" class="card-img-top" alt="...">
+        <img src="{{product.imagen}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title "><a
               class="link-dark  link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-              href="#">{{p.titulo}}</a>
+              href="#">{{product.titulo}}</a>
           </h5>
-          <p class="card-text">${{p.precio}}</p>
+          <p class="card-text">${{product.precio}}</p>
           <button class="btn btn-outline-dark w-100 border-2" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" (click)="onClick(product)">Add to
+            cart</button>
         </div>
       </div>
     </div>
@@ -23,17 +24,18 @@
 
   <!-- Muestra todos los productos en Collections -->
   <div *ngIf="isRoute('collection')" class="row row-cols-2 row-cols-md-4 g-4 col-sm-9 mx-auto ">
-    <div *ngFor="let p of list; let i=index" class="col">
+    <div *ngFor="let product of productsData; let i=index" class="col">
       <div class="card border-black border-2">
-        <img src="{{p.imagen}}" class="card-img-top" alt="...">
+        <img src="{{product.imagen}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title "><a
               class="link-dark  link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-              href="#">{{p.titulo}}</a>
+              href="#">{{product.titulo}}</a>
           </h5>
-          <p class="card-text">${{p.precio}}</p>
+          <p class="card-text">{{product.precio | currency}}</p>
           <button class="btn btn-outline-dark w-100 border-2" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" (click)="onClick(product)">Add to
+            cart</button>
         </div>
       </div>
     </div>

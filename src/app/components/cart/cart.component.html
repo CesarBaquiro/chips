@@ -1,0 +1,61 @@
+<div class="container">
+
+  <div class="row" *ngIf="products.length > 0">
+    <div class="col">
+      <p>Product</p>
+    </div>
+    <div class="col">
+      <p class="text-end">Price</p>
+    </div>
+    <hr />
+  </div>
+
+  <h1 class="text-center" *ngIf="products.length <= 0">Your cart is empty</h1>
+
+  <div class="container">
+    <div class="row pb-3" *ngFor="let product of products; let i=index">
+
+      <div class="col">
+        <img src="{{product.imagen}}" class="card-img" alt="...">
+      </div>
+      <div class="col">
+        <h5 class="card-title "><a
+            class="link-dark  link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+            href="#">{{product.titulo}} | {{product.coleccion}}</a>
+        </h5>
+      </div>
+      <div class="col">
+
+        <div class="card-body">
+          <p class="text-end">{{product.precio | currency}}</p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="card-text">Cantidad: 0</p>
+        </div>
+        <div class="col">
+          <i class="bi bi-trash3" style="cursor: pointer" (click)="onClickDelete(i)"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Container total -->
+<div class="container-sm" *ngIf="products.length > 0">
+  <hr />
+  <div class="row pt-3">
+    <div class="col">
+      <h5>Total</h5>
+    </div>
+    <div class="col">
+      <app-total class="text-end"></app-total>
+    </div>
+    <p>Sujeto a costos de envio.</p>
+  </div>
+  <button class="btn btn-success border-2 w-100">Enviar pedido</button>
+  <hr />
+</div>

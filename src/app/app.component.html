@@ -1,21 +1,15 @@
 <!-- Barra de logo superior-->
 <div class="bg-black" style="position: relative;">
-
   <div class="container d-flex justify-content-center align-items-center">
     <a class="logotipo" href="">
       <img src="./assets/icons/chips-letras-blanco.png"
         class="container d-flex justify-content-center align-items-center" width="140" height="60">
     </a>
     <!-- Carrito -->
-    <i class="bi bi-cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+    <i class="bi bi-cart" style="cursor: pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
       aria-controls="offcanvasRight"></i>
   </div>
-
-
-
-
 </div>
-
 
 <!-- Barra de navegacion superior -->
 <nav class="navbar navbar-expand-lg bg-black">
@@ -63,18 +57,12 @@
 </nav>
 
 <!-- Pestaña emergenete de carrito -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">your shopping cart</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    CONTENIDO DEL CARRITO
-  </div>
-</div>
+<app-offcanvas-cart></app-offcanvas-cart>
 
+<!-- Rutas -->
 <router-outlet></router-outlet>
 
+<!-- ------------Footer ------------------>
 <footer class="bg-black text-center text-white ">
   <div class="row row-cols-1 row-cols-md-3 g-4 col-sm-9 mx-auto ">
     <div class="col">
@@ -112,8 +100,8 @@
       </div>
     </div>
     <div class="col">
-      <a href="#">
-        <img src="../assets/icons/C-chips.png" style="max-width: 150px;">
+      <a href="https://cesarbaquiro.github.io/chips/">
+        <img src="/assets/icons/c-chips.png" style="max-width: 150px;">
       </a>
     </div>
     <h2 style="margin: 2vw; ">¡Nuestra manera de compartir!</h2>
