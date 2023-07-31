@@ -22,5 +22,26 @@ function createWhatsAppLink(message: string): string {
 
 // Ejemplo de uso
 
-const whatsappLink: string = createWhatsAppLink('Hola como estassssss');
+const whatsappLink: string = createWhatsAppLink(`*Nuevo pedido - Chips*
+---
+
+*Productos*
+{informacion
+del progucto}
+---
+
+*Datos del comprador*
+{informacion
+del comprador}
+---
+
+*Informacion de envio*
+{informacion
+del envio}
+
+{Direccion
+del
+envio}
+
+-Acepta terminos y condiciones.-`);
 console.log(whatsappLink);

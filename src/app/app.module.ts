@@ -18,6 +18,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { CartComponent } from './components/cart/cart.component';
 import { OffcanvasCartComponent } from './components/offcanvas-cart/offcanvas-cart.component';
 import { TotalComponent } from './total/total.component';
+import { FormOrderComponent } from './form-order/form-order.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -52,6 +53,7 @@ const appRoutes: Routes = [
     CartComponent,
     OffcanvasCartComponent,
     TotalComponent,
+    FormOrderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
