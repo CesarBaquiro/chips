@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'Chips';
 }
 
+//-------------------LINK DE WHATSAPP-------------
+
 function createWhatsAppLink(message: string): string {
   // Reemplaza los caracteres especiales en el mensaje
   const encodedMessage: string = encodeURIComponent(message);

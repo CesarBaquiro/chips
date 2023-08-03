@@ -28,11 +28,13 @@ export class CartService {
       product.cantidad = 1;
       this.cartProducts.push(product);
     }
+    //console.log(this.cartProducts);
     this._products.next(this.cartProducts);
   }
 
   deleteProduct(index: number) {
     this.cartProducts.splice(index, 1);
+    //console.log(this.cartProducts);
     this._products.next(this.cartProducts);
   }
 
