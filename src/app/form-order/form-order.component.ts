@@ -68,7 +68,7 @@ El envío es por parte de una empresa transportadora nacional, cualquier inconve
 
 -Acepta terminos y condiciones.-`
     );
-    console.log(whatsappLink);
+    window.open(whatsappLink, '_blank');
   }
 }
 
