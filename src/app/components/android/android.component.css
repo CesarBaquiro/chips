@@ -1,0 +1,40 @@
+.container-android {
+  margin: 60px;
+}
+
+/* circle-animation.component.css */
+
+.rectangle {
+  margin-top: 500px;
+  width: 200px;
+  height: 450px;
+  background-color: rgb(21, 255, 21);
+  border-radius: 10%;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Consulta de medios para pantallas de ancho menor a 610px */
+@media (max-width: 610px) {
+  .rectangle {
+    margin-top: 400px;
+    width: 150px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .rectangle {
+    margin-top: 250px;
+    width: 100px;
+    height: 200px;
+  }
+}
