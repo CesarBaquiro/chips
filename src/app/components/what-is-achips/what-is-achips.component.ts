@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-what-is-achips',
   templateUrl: './what-is-achips.component.html',
-  styleUrls: ['./what-is-achips.component.css']
+  styleUrls: ['./what-is-achips.component.css'],
 })
-export class WhatIsAChipsComponent {
+export class WhatIsAChipsComponent implements OnInit {
+  constructor() {}
 
+  ngOnInit(): void {}
 }
