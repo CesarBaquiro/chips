@@ -31,9 +31,13 @@
               href="#" translate="no">{{product.titulo}} | {{product.coleccion}}</a>
           </h5>
           <p class="card-text">{{product.precio | currency}}</p>
-          <button class="btn btn-outline-dark w-100 border-2" data-bs-toggle="offcanvas"
+
+          <button *ngIf="!product.agotado" class="btn btn-outline-dark w-100 border-2" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" (click)="onClick(product)">Add to
             cart</button>
+          <button *ngIf="product.agotado" class="btn btn-outline-dark w-100 border-2" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" [disabled]="true"
+            (click)="onClick(product)">Sold out</button>
         </div>
       </div>
     </div>

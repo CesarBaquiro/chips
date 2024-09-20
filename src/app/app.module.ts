@@ -19,6 +19,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { OffcanvasCartComponent } from './components/offcanvas-cart/offcanvas-cart.component';
 import { TotalComponent } from './total/total.component';
 import { FormOrderComponent } from './form-order/form-order.component';
+import { ShippingPolicyComponent } from './components/shipping-policy/shipping-policy.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'apple', component: AppleComponent },
   { path: 'what-is-a-chip', component: WhatIsAChipsComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'shipping-policy', component: ShippingPolicyComponent },
   {
     path: 'products',
     component: ProductsComponent,
@@ -54,6 +56,7 @@ const appRoutes: Routes = [
     OffcanvasCartComponent,
     TotalComponent,
     FormOrderComponent,
+    ShippingPolicyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],

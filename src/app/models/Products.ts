@@ -6,4 +6,5 @@ export interface Products {
   coleccion: string;
   imagen: string;
   cantidad: number;
+  agotado: boolean;
 }
