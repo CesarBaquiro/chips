@@ -19,7 +19,10 @@ import { CartComponent } from './components/cart/cart.component';
 import { OffcanvasCartComponent } from './components/offcanvas-cart/offcanvas-cart.component';
 import { TotalComponent } from './total/total.component';
 import { FormOrderComponent } from './form-order/form-order.component';
-import { ShippingPolicyComponent } from './components/shipping-policy/shipping-policy.component';
+import { ShippingPolicyComponent } from './components/footer/shipping-policy/shipping-policy.component';
+import { HowPersonalizedComponent } from './components/how-personalized/how-personalized.component';
+import { PrivacyPolicyComponent } from './components/footer/privacy-policy/privacy-policy.component';
+import { RefundPolicyComponent } from './components/footer/refund-policy/refund-policy.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,6 +32,9 @@ const appRoutes: Routes = [
   { path: 'what-is-a-chip', component: WhatIsAChipsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'shipping-policy', component: ShippingPolicyComponent },
+  { path: 'how-personalized', component: HowPersonalizedComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'refund-policy', component: RefundPolicyComponent },
   {
     path: 'products',
     component: ProductsComponent,
@@ -57,6 +63,9 @@ const appRoutes: Routes = [
     TotalComponent,
     FormOrderComponent,
     ShippingPolicyComponent,
+    HowPersonalizedComponent,
+    PrivacyPolicyComponent,
+    RefundPolicyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
